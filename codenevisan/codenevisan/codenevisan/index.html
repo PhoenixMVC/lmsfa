@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>کدنویسان | پلتفرم آموزشی مدرن</title>
+    <meta name="description" content="پلتفرم آموزشی مدرن با دوره‌های تخصصی و کاربردی">
+    
+    <!-- فونت‌ها -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- آیکون‌ها -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="assets/css/css-index.css">
+
+  
+</head>
+
+<body class="dark-theme">
+    <!-- هدر -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-container">
+                <!-- لوگو -->
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <span>کدنویسان</span>
+                </a>
+
+                <!-- منوی اصلی -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html" class="nav-link active">خانه</a></li>
+                        <li><a href="courses.html" class="nav-link">دوره‌ها</a></li>
+                        <li><a href="instructors.html" class="nav-link">مدرسین</a></li>
+                        <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                        <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                    </ul>
+                </nav>
+
+                <!-- اقدامات هدر -->
+                <div class="header-actions">
+                    <!-- تغییر تم -->
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- دکمه‌های کاربر -->
+                    <a href="login.html" class="btn btn-secondary">ورود</a>
+                    <a href="register.html" class="btn btn-primary">عضویت</a>
+
+                    <!-- منوی موبایل -->
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- منوی موبایل -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <span>کدنویسان</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobile-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link active">خانه</a></li>
+            <li><a href="courses.html" class="mobile-nav-link">دوره‌ها</a></li>
+            <li><a href="instructors.html" class="mobile-nav-link">مدرسین</a></li>
+            <li><a href="about.html" class="mobile-nav-link">درباره ما</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">تماس با ما</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+            <a href="login.html" class="btn btn-secondary" style="width: 100%; justify-content: center;">ورود</a>
+            <a href="register.html" class="btn btn-primary" style="width: 100%; justify-content: center;">عضویت</a>
+        </div>
+    </div>
+
+    <!-- بخش هیرو - بازطراحی شده -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>آینده‌ی خود را بسازید</span>
+                </div>
+                <h1 class="hero-title">مهارت‌های آینده را امروز بیاموزید</h1>
+                <p class="hero-description">
+                    با کدنویسان، مهارت‌های مورد نیاز بازار کار را به‌صورت عملی و کاربردی فرا بگیرید. 
+                    دوره‌های تخصصی ما توسط برترین اساتید طراحی شده‌اند.
+                </p>
+                <div class="hero-actions">
+                    <a href="courses.html" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>شروع یادگیری</span>
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        <span>درباره ما</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="img/hero3.png" alt="کدنویسان - پلتفرم آموزشی">
+                </div>
+                <div class="hero-background-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش جدید - پلتفرم‌های همکار -->
+    <section class="partners">
+        <div class="container partners-container">
+            <h3 class="partners-title">همکاری با برترین پلتفرم‌ها</h3>
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <i class="fab fa-google fa-2x"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-microsoft fa-2x"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-apple fa-2x"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-amazon fa-2x"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fab fa-meta fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش جدید - ویدیو آموزشی -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">تجربه یادگیری</span>
+                <h2 class="section-title">یادگیری تعاملی و جذاب</h2>
+                <p class="section-description">
+                    با ویدیوهای آموزشی با کیفیت و محیط یادگیری تعاملی، مهارت‌های جدید را به راحتی فرا بگیرید
+                </p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-content">
+                    <h3>چرا ویدیوهای آموزشی کدنویسان متفاوت است؟</h3>
+                    <p style="margin-bottom: 1.5rem;">
+                        ویدیوهای آموزشی کدنویسان توسط متخصصان هر حوزه تهیه شده و با جدیدترین متدهای آموزشی ارائه می‌شوند. 
+                        هر ویدیو شامل مثال‌های عملی، تمرین‌های تعاملی و پروژه‌های واقعی است.
+                    </p>
+                    <ul style="list-style: none; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.2rem;"></i>
+                            <span>ویدیوهای با کیفیت Full HD</span>
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.2rem;"></i>
+                            <span>زیرنویس فارسی و قابلیت تنظیم سرعت پخش</span>
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.2rem;"></i>
+                            <span>تمرین‌های عملی پس از هر بخش</span>
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.2rem;"></i>
+                            <span>پشتیبانی آنلاین برای پاسخ به سوالات</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="video-stats">
+                        <div class="video-stat">
+                            <div class="video-stat-number">۵۰۰+</div>
+                            <div class="video-stat-label">ساعت ویدیو آموزشی</div>
+                        </div>
+                        <div class="video-stat">
+                            <div class="video-stat-number">۹۸٪</div>
+                            <div class="video-stat-label">رضایت کاربران</div>
+                        </div>
+                        <div class="video-stat">
+                            <div class="video-stat-number">۲۴/۷</div>
+                            <div class="video-stat-label">دسترسی آنلاین</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-wrapper">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- بخش دسته‌بندی‌ها -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">دسته‌بندی‌ها</span>
+                <h2 class="section-title">کاوش در حوزه‌های مختلف</h2>
+                <p class="section-description">
+                    دوره‌های تخصصی در حوزه‌های مختلف برای توسعه مهارت‌های شما
+                </p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-title">برنامه‌نویسی</h3>
+                    <p class="category-description">
+                        یادگیری زبان‌های برنامه‌نویسی مدرن و فریمورک‌های محبوب
+                    </p>
+                    <div class="category-count">۱۵۰+ دوره</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="category-title">طراحی و خلاقیت</h3>
+                    <p class="category-description">
+                        طراحی UI/UX، گرافیک، موشن و سایر مهارت‌های خلاقانه
+                    </p>
+                    <div class="category-count">۸۵+ دوره</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="category-title">بازاریابی و فروش</h3>
+                    <p class="category-description">
+                        دیجیتال مارکتینگ، سئو، شبکه‌های اجتماعی و استراتژی‌های فروش
+                    </p>
+                    <div class="category-count">۱۲۰+ دوره</div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="category-title">کسب و کار</h3>
+                    <p class="category-description">
+                        مدیریت، رهبری، کارآفرینی و توسعه کسب و کار
+                    </p>
+                    <div class="category-count">۹۵+ دوره</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- بخش دوره‌ها - بهبود یافته -->
+    <section class="courses">
+        <div class="container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">محبوب‌ترین دوره‌ها</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- دوره ۱ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/card-2.avif" alt="توسعه وب با React.js">
+                        <span class="course-badge">پرطرفدار</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">برنامه‌نویسی</div>
+                        <h3 class="course-title">توسعه وب با React.js</h3>
+                        <p class="course-description">
+                            یادگیری React.js از صفر تا صد با انجام پروژه‌های واقعی. شامل مفاهیم پیشرفته مانند Hooks و Context API.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۴ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۲۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">متوسط</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="instructor-avatar">AR</div>
+                            <span>علی رضایی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">۲۹۰,۰۰۰ تومان</div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۹ (۱۲۴)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۲ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/card-3.avif" alt="یادگیری ماشین با Python">
+                        <span class="course-badge">جدید</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">هوش مصنوعی</div>
+                        <h3 class="course-title">یادگیری ماشین با Python</h3>
+                        <p class="course-description">
+                            دوره جامع یادگیری ماشین با پیاده‌سازی الگوریتم‌های مختلف و پروژه‌های عملی.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۳۶ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۵۶ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">پیشرفته</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="instructor-avatar">MK</div>
+                            <span>مریم کریمی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">۴۲۰,۰۰۰ تومان</div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۸ (۹۶)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۳ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/card-4.avif" alt="طراحی تجربه کاربری با Figma">
+                        <span class="course-badge">تخفیف ویژه</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">طراحی UI/UX</div>
+                        <h3 class="course-title">طراحی تجربه کاربری با Figma</h3>
+                        <p class="course-description">
+                            طراحی رابط کاربری مدرن و تجربه کاربری عالی با ابزار Figma. شامل اصول طراحی و پروتوتایپ.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۰ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۹۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">مقدماتی</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="instructor-avatar">RN</div>
+                            <span>رضا نوروزی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                ۲۴۵,۰۰۰ تومان
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۷ (۸۷)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش جدید - سوالات متداول - بهبود یافته -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">سوالات متداول</span>
+                <h2 class="section-title">پاسخ به سوالات شما</h2>
+                <p class="section-description">
+                    پاسخ سوالات متداول درباره کدنویسان و نحوه استفاده از پلتفرم
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>چگونه در کدنویسان ثبت نام کنم؟</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>برای ثبت نام در کدنویسان، روی دکمه "عضویت" در بالای صفحه کلیک کنید و اطلاعات مورد نیاز شامل نام، ایمیل و رمز عبور را وارد نمایید. پس از تأیید ایمیل، حساب کاربری شما فعال خواهد شد.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>آیا دوره‌ها به صورت آنلاین برگزار می‌شوند؟</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بله، تمام دوره‌های کدنویسان به صورت آنلاین و خودآموز هستند. شما می‌توانید در هر زمان و مکان به محتوای دوره دسترسی داشته باشید و با سرعت دلخواه خود یاد بگیرید.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>آیا گواهینامه‌های کدنویسان معتبر هستند؟</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بله، گواهینامه‌های کدنویسان توسط بسیاری از شرکت‌ها و سازمان‌ها به رسمیت شناخته می‌شوند. این گواهینامه‌ها مهارت‌های شما را تأیید کرده و می‌توانند در رزومه شما قرار گیرند.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>چگونه می‌توانم پرداخت کنم؟</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>کدنویسان از روش‌های مختلف پرداخت از جمله کارت‌های بانکی، کیف پول‌های الکترونیکی و درگاه‌های پرداخت آنلاین پشتیبانی می‌کند. پرداخت شما به صورت کاملاً امن انجام می‌شود.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- فوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap footer-logo-icon"></i>
+                        <span>کدنویسان</span>
+                    </a>
+                    <p class="footer-description">
+                        کدنویسان یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="courses.html">دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html">مدرسین</a></li>
+                        <li><a href="blog.html">وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">برنامه‌نویسی</a></li>
+                        <li><a href="#">طراحی و خلاقیت</a></li>
+                        <li><a href="#">بازاریابی و فروش</a></li>
+                        <li><a href="#">کسب و کار</a></li>
+                        <li><a href="#">عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@faramooz.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © ۲۰۲۳ کدنویسان. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="assets/js/js-index.js"></script>
+
+ 
+</body>
+
+</html>
