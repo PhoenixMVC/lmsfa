@@ -1,0 +1,4513 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<!-- Mirrored from iliya-r.ir/img-9/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 May 2026 12:06:29 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>آکادمی کُدینو - سیستم آموزشی حرفه‌ای</title>
+    <meta name="description" content="دسترسی به 5500+ دوره آموزشی از 480 مدرس و موسسه">
+    
+    <!-- فونت‌ها -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- آیکون‌ها -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* متغیرهای CSS */
+        :root {
+            --primary-color: #2ea2cc;
+            --primary-dark: #1e7ba6;
+            --secondary-color: #f59e0b;
+            --accent-color: #2ea2cc;
+            --dark-bg: #000000;
+            --dark-surface: #1e293ba4;
+            --dark-card: #334155;
+            --dark-text: #f1f5f9;
+            --dark-text-secondary: #94a3b8;
+            --light-bg: #f8fafc;
+            --light-surface: #ffffff;
+            --light-card: #f1f5f9;
+            --light-text: #1e293b;
+            --light-text-secondary: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* تم روشن */
+        .light-theme {
+            --bg-color: var(--light-bg);
+            --surface-color: var(--light-surface);
+            --card-color: var(--light-card);
+            --text-color: var(--light-text);
+            --text-secondary: var(--light-text-secondary);
+        }
+
+        /* تم تاریک */
+        .dark-theme {
+            --bg-color: var(--dark-bg);
+            --surface-color: var(--dark-surface);
+            --card-color: var(--dark-card);
+            --text-color: var(--dark-text);
+            --text-secondary: var(--dark-text-secondary);
+        }
+
+        /* ریست استایل‌ها */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            direction: rtl;
+            transition: var(--transition);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* تایپوگرافی */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-color);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.25rem; }
+        h6 { font-size: 1.125rem; }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* دکمه‌ها */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .btn:hover::before {
+            transform: translateX(100%);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--text-secondary);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* هدر - طراحی جدید */
+        .page-header {
+            background-color: var(--surface-color);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .top-bar {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-content {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .top-bar-badge {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            gap:8.7rem;  
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            z-index: 1002;
+            transition: var(--transition);
+        }
+
+        .logo.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .logo-icon {
+            color:  rgb(19, 83, 245);
+            font-size: 1.8rem;
+        }
+
+        /* طراحی جدید ناوبری */
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 8.7rem;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            box-shadow:var(--shadow);
+        }
+
+        .search-box:focus-within {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-input {
+            border: none;
+            background: transparent;
+            padding: 0.75rem 1rem;
+            width: 250px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .search-input:focus {
+            outline: none;
+        }
+
+        .search-btn {
+            background: transparent;
+            border: none;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .search-btn:hover {
+            color: var(--primary-color);
+        }
+
+        /* طراحی جدید منوی موبایل */
+        .mobile-menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1002;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-toggle:hover {
+            background-color: var(--card-color);
+        }
+
+        .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .hamburger-lines {
+            display: flex;
+            flex-direction: column;
+            width: 24px;
+            height: 18px;
+            justify-content: space-between;
+        }
+
+        .hamburger-line {
+            display: block;
+            height: 2px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        /* طراحی جدید منوی موبایل */
+        .mobile-nav-container {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 320px;
+            height: 100vh;
+            background: var(--surface-color);
+            display: flex;
+            flex-direction: column;
+            padding: 5rem 1.5rem 2rem;
+            transition: var(--transition);
+            z-index: 1001;
+            box-shadow: var(--shadow-lg);
+            overflow-y: auto;
+        }
+
+        .mobile-nav-container.active {
+            right: 0;
+        }
+
+        .mobile-nav {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .mobile-nav-item {
+            border-bottom: 1px solid var(--card-color);
+        }
+
+        .mobile-nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 0;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-link i {
+            width: 20px;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active {
+            color: var(--primary-color);
+            padding-right: 0.5rem;
+        }
+
+        .mobile-header-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: auto;
+            border-top: 1px solid var(--card-color);
+        }
+
+        .mobile-search-box {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .mobile-search-box:focus-within {
+            border-color: var(--primary-color);
+        }
+
+        .mobile-search-input {
+            border: none;
+            background: transparent;
+            padding: 0.75rem 1rem;
+            width: 100%;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .mobile-search-input:focus {
+            outline: none;
+        }
+
+        .mobile-search-btn {
+            background: transparent;
+            border: none;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .mobile-search-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(2px);
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        /* بخش هیرو */
+        .hero-section {
+            position: relative;
+            padding: 6rem 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: 0.05;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(var(--primary-color) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--card-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            width: fit-content;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            line-height: 1.2;
+            background: linear-gradient(120deg, var(--text-color), #09a7e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 90%;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .hero-search {
+            display: flex;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-search-input {
+            flex: 1;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            color: var(--text-color);
+            background: transparent;
+        }
+
+        .hero-search-input:focus {
+            outline: none;
+        }
+
+        .hero-search-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .hero-search-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-visual {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            animation: float 6s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .floating-card:nth-child(1) {
+            top: 10%;
+            left: 0;
+            animation-delay: 0s;
+        }
+
+        .floating-card:nth-child(2) {
+            bottom: 20%;
+            right: 0;
+            animation-delay: 2s;
+        }
+
+        .floating-card:nth-child(3) {
+            bottom: 10%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .card-icon.primary {
+            background: var(--primary-color);
+        }
+
+        .card-icon.secondary {
+            background: var(--secondary-color);
+        }
+
+        .card-icon.accents {
+            background: rgb(19, 83, 245);
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* بخش امکانات */
+        .features-section {
+            padding: 0.5rem 0;
+            background-color: var(--bg-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-subtitle {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid transparent;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            background: linear-gradient(135deg, rgb(19, 83, 245), var(--accent-color));
+            box-shadow: var(--shadow);
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .feature-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-top: auto;
+        }
+
+        .feature-link i {
+            transition: var(--transition);
+        }
+
+        .feature-link:hover i {
+            transform: translateX(-5px);
+        }
+
+        /* بخش دوره‌های ویژه */
+        .courses-section {
+            padding-top: 4rem 0;
+            background-color: var(--bg-color);
+        }
+
+        .courses-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 2rem;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .course-image {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .course-card:hover .course-image img {
+            transform: scale(1.05);
+        }
+
+        .course-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .course-badge.popular {
+            background: var(--secondary-color);
+        }
+
+        .course-badge.new {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .course-badge.discount {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .course-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .course-category {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            height: 3.5rem;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .course-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--card-color);
+            padding-bottom: 1rem;
+        }
+
+        .course-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .course-info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .course-level {
+            background: var(--card-color);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .course-instructor {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .instructor-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .course-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .course-price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .course-old-price {
+            font-size: 0.9rem;
+            text-decoration: line-through;
+            color: var(--text-secondary);
+            margin-left: 0.5rem;
+        }
+
+        .course-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--warning-color);
+        }
+
+        .btn-enroll {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-enroll:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46, 162, 204, 0.4);
+        }
+
+        /* بخش CTA */
+        .cta-section {
+            padding: 8rem 0;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+        }
+
+        .cta-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .cta-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(46, 162, 204, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+        }
+
+        .cta-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float-particle 15s infinite linear;
+        }
+
+        .particle:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+            animation-duration: 20s;
+        }
+
+        .particle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            left: 20%;
+            animation-delay: 2s;
+            animation-duration: 25s;
+        }
+
+        .particle:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 30%;
+            left: 70%;
+            animation-delay: 4s;
+            animation-duration: 30s;
+        }
+
+        .particle:nth-child(4) {
+            width: 30px;
+            height: 30px;
+            top: 80%;
+            left: 80%;
+            animation-delay: 6s;
+            animation-duration: 18s;
+        }
+
+        .particle:nth-child(5) {
+            width: 50px;
+            height: 50px;
+            top: 20%;
+            left: 50%;
+            animation-delay: 8s;
+            animation-duration: 22s;
+        }
+
+        @keyframes float-particle {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.7;
+            }
+            25% {
+                transform: translateY(-20px) rotate(90deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(0) rotate(180deg);
+                opacity: 0.7;
+            }
+            75% {
+                transform: translateY(20px) rotate(270deg);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 0.7;
+            }
+        }
+
+        .cta-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(46, 162, 204, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(46, 162, 204, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(46, 162, 204, 0);
+            }
+        }
+
+        .cta-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            line-height: 1.2;
+            background: linear-gradient(120deg, #ffffff, #a5f3fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: title-glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes title-glow {
+            from {
+                text-shadow: 0 0 10px rgba(165, 243, 252, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(165, 243, 252, 0.8), 0 0 30px rgba(165, 243, 252, 0.6);
+            }
+        }
+
+        .cta-description {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn-light {
+            background-color: white;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-light:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            background-color: #f0f9ff;
+        }
+
+        .btn-outline-light {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: var(--border-radius-lg);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-outline-light::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background: white;
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-outline-light:hover::before {
+            width: 100%;
+        }
+
+        .btn-outline-light:hover {
+            color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .cta-features {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .cta-feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            max-width: 200px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .cta-feature:nth-child(1) { animation-delay: 0.2s; }
+        .cta-feature:nth-child(2) { animation-delay: 0.4s; }
+        .cta-feature:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cta-feature:hover .feature-icon-wrapper {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-text {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* فوتر */
+        .modern-footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            padding: 4rem 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: 0.05;
+        }
+
+        .footer-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#2ea2cc 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .footer-container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            padding-bottom: 3rem;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        .footer-logo-icon {
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+        .footer-description {
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #cbd5e1;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(46, 162, 204, 0.3);
+        }
+
+        .footer-col h3 {
+            color: white;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 3px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.85rem;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 0.5rem;
+        }
+
+        .footer-links a i {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        .footer-contact {
+            list-style: none;
+        }
+
+        .footer-contact li {
+            margin-bottom: 1.38rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .footer-contact i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-top: 0.2rem;
+            width: 20px;
+        }
+
+        .footer-contact span {
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+
+        .footer-newsletter {
+            margin-top: 1rem;
+        }
+
+        .newsletter-text {
+            color: #94a3b8;
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            padding: 0.85rem 1rem;
+            color: white;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(46, 162, 204, 0.2);
+        }
+
+        .newsletter-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .btn-newsletter {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 0.85rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-newsletter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(46, 162, 204, 0.4);
+        }
+
+        .footer-payment {
+            padding: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .payment-container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .payment-title {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .payment-title i {
+            color: var(--success-color);
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .payment-method {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .payment-method:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .payment-method.zarinpal {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #333;
+            font-weight: 600;
+        }
+
+        .payment-icon {
+            font-size: 1.5rem;
+        }
+
+        .security-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .security-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .security-badge:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .security-badge i {
+            color: var(--success-color);
+            font-size: 1.2rem;
+        }
+
+        /* بخش پایین فوتر */
+        .footer-bottom {
+            padding: 2rem 0;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-copyright {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom-links a {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-bottom-links a:hover {
+            color: white;
+        }
+
+        /* بخش نظرات */
+        .testimonials-section {
+            padding:  0;
+            background-color: var(--bg-color);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-role {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 0.2rem;
+            color: var(--warning-color);
+            margin-top: 0.5rem;
+        }
+
+        .testimonial-content {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial-content::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: -1.5rem;
+            right: -0.5rem;
+            line-height: 1;
+        }
+
+        .testimonial-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--card-color);
+            padding-top: 1rem;
+        }
+
+        .testimonial-course {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .course-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            background:  rgb(19, 83, 245);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        /* بخش چرا آکادمی کُدینو - طراحی جدید */
+        .why-us-section {
+            padding: 4rem 0;
+            background-color: var(--bg-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: 0.03;
+        }
+
+        .why-us-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(var(--primary-color) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .why-us-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-us-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .why-us-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .why-us-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .why-us-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us-feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+            transform: scaleY(0);
+            transition: transform 0.5s ease;
+        }
+
+        .why-us-feature:hover::before {
+            transform: scaleY(1);
+        }
+
+        .why-us-feature:hover {
+            transform: translateX(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon-container {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg,  rgb(19, 83, 245), #36c1f3);
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .why-us-feature:hover .feature-icon-container {
+            transform: scale(1.1);
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+        }
+
+        .feature-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .why-us-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .visual-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .main-visual {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .visual-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .main-visual:hover .visual-image {
+            transform: scale(1.02);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: var(--shadow);
+            animation: float-element 6s infinite ease-in-out;
+            border: 1px solid var(--card-color);
+            z-index: 2;
+        }
+
+        .floating-element i {
+            color: rgb(19, 83, 245);
+        }
+
+        .floating-element span {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .element-1 {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .element-2 {
+            top: 50%;
+            left: -10%;
+            animation-delay: 2s;
+        }
+
+        .element-3 {
+            bottom: 20%;
+            right: 5%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float-element {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            33% { transform: translateY(-10px) rotate(2deg); }
+            66% { transform: translateY(5px) rotate(-2deg); }
+        }
+
+        /* استایل‌های ریسپانسیو جدید */
+        @media (max-width: 1024px) {
+            .footer-main {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2rem;
+            }
+            
+            .footer-col:first-child {
+                grid-column: 1 / -1;
+            }
+            
+            .why-us-grid {
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-description {
+                max-width: 100%;
+            }
+            
+            .floating-card {
+                display: none;
+            }
+            
+            .courses-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .cta-title {
+                font-size: 2.8rem;
+            }
+            
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .why-us-visual {
+                order: -1;
+            }
+            
+            .visual-container {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .nav-container {
+                display: none;
+            }
+            
+            .header-actions .btn {
+                display: none;
+            }
+            
+            .search-container {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-stats {
+                flex-wrap: wrap;
+            }
+            
+            .hero-search {
+                flex-direction: column;
+            }
+            
+            .hero-search-input {
+                width: 100%;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-title {
+                font-size: 2.2rem;
+            }
+            
+            .cta-description {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            
+            .payment-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .why-us-section {
+                padding: 4rem 0;
+            }
+            
+            .why-us-feature {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .feature-icon-container {
+                margin: 0 auto;
+            }
+            
+            .floating-element {
+                display: none;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+            
+            .mobile-nav-container {
+                display: none;
+            }
+            
+            .mobile-menu-overlay {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero-section {
+                padding: 4rem 0;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-description {
+                font-size: 0.95rem;
+            }
+            
+            .feature-card {
+                padding: 1.5rem;
+            }
+            
+            .course-content {
+                padding: 1rem;
+            }
+            
+            .cta-section {
+                padding: 5rem 0;
+            }
+            
+            .cta-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-description {
+                font-size: 1rem;
+            }
+            
+            .cta-features {
+                gap: 1.5rem;
+            }
+            
+            .cta-feature {
+                max-width: 150px;
+            }
+            
+            .feature-icon-wrapper {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .feature-icon {
+                font-size: 1.5rem;
+            }
+            
+            .feature-text {
+                font-size: 0.9rem;
+            }
+            
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .payment-methods, .security-badges {
+                justify-content: center;
+            }
+            
+            .footer-bottom-links {
+                justify-content: center;
+            }
+            
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            
+            .why-us-section {
+                padding: 3rem 0;
+            }
+            
+            .why-us-header {
+                margin-bottom: 2rem;
+            }
+            
+            .visual-container {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.6rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .stat-item {
+                align-items: center;
+            }
+            
+            .courses-header {
+                align-items: center;
+                text-align: center;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .testimonial-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .testimonial-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .mobile-nav-container {
+                width: 90%;
+            }
+        }
+
+        /* استایل‌های بهبود یافته برای فاصله‌ها و چیدمان */
+        .container {
+            padding: 0 24px;
+        }
+
+        /* بهبود هدر */
+        .header-wrap {
+            padding: 16px 0;
+        }
+
+        .top-bar {
+            padding: 12px 0;
+        }
+
+        /* بهبود بخش هیرو */
+        .hero-section {
+            padding: 6rem 0;
+        }
+
+        .hero-content {
+            gap: 3rem;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 90%;
+            color: var(--text-color);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .hero-search {
+            display: flex;
+            max-width: 500px;
+            background: var(--card-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .hero-search:focus-within {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        }
+
+        .hero-search-input {
+            flex: 1;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            color: var(--text-color);
+            background: transparent;
+            min-height: 56px;
+        }
+
+        .hero-search-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            min-height: 56px;
+            min-width: 56px;
+        }
+
+        /* بهبود فاصله‌های داخلی المان‌ها */
+        .btn {
+            padding: 9px 24px;
+        }
+
+        .search-input, .hero-search-input, .newsletter-input {
+            padding: 12px 16px;
+        }
+
+        .search-btn, .hero-search-btn, .mobile-search-btn {
+            padding: 12px 16px;
+        }
+
+        .btn-enroll {
+            padding: 14px 24px;
+            margin-top: 20px;
+        }
+
+        /* بهبود فواصل برای موبایل */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .hero-content {
+                gap: 40px;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+                margin-bottom: 20px;
+            }
+
+            .features-section, .courses-section, .testimonials-section, .why-us-section {
+                padding: 60px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 40px;
+            }
+            
+            .courses-header, .testimonials-header, .why-us-header {
+                margin-bottom: 40px;
+            }
+            
+            .feature-card, .testimonial-card {
+                padding: 24px;
+            }
+            
+            .course-content {
+                padding: 20px;
+            }
+            
+            .cta-section {
+                padding: 80px 0;
+            }
+            
+            .cta-title {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .cta-description {
+                margin-bottom: 40px;
+            }
+            
+            .cta-buttons {
+                margin-bottom: 50px;
+            }
+            
+            .cta-features {
+                margin-top: 50px;
+                gap: 30px;
+            }
+            
+            .modern-footer {
+                padding: 60px 0 0;
+            }
+            
+            .footer-main {
+                padding-bottom: 50px;
+                gap: 30px;
+            }
+            
+            .footer-payment {
+                padding: 30px 0;
+            }
+            
+            .footer-bottom {
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .hero-section {
+                padding: 40px 0;
+            }
+            
+            .hero-content {
+                gap: 30px;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+                margin-bottom: 16px;
+            }
+            
+            .hero-stats {
+                margin: 20px 0;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat-item {
+                align-items: center;
+            }
+            
+            .features-section, .courses-section, .testimonials-section, .why-us-section {
+                padding: 40px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 30px;
+            }
+            
+            .courses-header, .testimonials-header, .why-us-header {
+                margin-bottom: 30px;
+            }
+            
+            .feature-card, .testimonial-card {
+                padding: 20px;
+            }
+            
+            .course-content {
+                padding: 16px;
+            }
+            
+            .cta-section {
+                padding: 60px 0;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+                margin-bottom: 16px;
+            }
+            
+            .cta-description {
+                margin-bottom: 30px;
+            }
+            
+            .cta-buttons {
+                margin-bottom: 40px;
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .cta-features {
+                margin-top: 40px;
+                gap: 24px;
+            }
+            
+            .modern-footer {
+                padding: 40px 0 0;
+            }
+            
+            .footer-main {
+                padding-bottom: 40px;
+                gap: 24px;
+            }
+            
+            .footer-payment {
+                padding: 24px 0;
+            }
+            
+            .footer-bottom {
+                padding: 24px 0;
+            }
+            
+            .footer-bottom-content {
+                gap: 16px;
+            }
+            
+            .footer-bottom-links {
+                gap: 16px;
+                justify-content: center;
+            }
+        }
+
+        /* استایل‌های بهبود یافته برای بخش هیرو در موبایل */
+        @media (max-width: 768px) {
+            .hero-image {
+                display: none !important;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr !important;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .hero-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-badge {
+                margin: 0 auto;
+            }
+            
+            .hero-description {
+                max-width: 100% !important;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-search {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* بهبود منوی همبرگر در موبایل */
+        .mobile-menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1002;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex !important;
+            }
+            
+            .nav-container {
+                display: none !important;
+            }
+            
+            .header-actions .btn {
+                display: none;
+            }
+            
+            .search-container {
+                display: none;
+            }
+            
+            .header-wrap {
+                justify-content: space-between;
+                gap: 1rem;
+            }
+            
+            .logo {
+                flex: 1;
+            }
+        }
+
+        /* بهبود منوی موبایل */
+        .mobile-nav-container {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 320px;
+            height: 100vh;
+            background: var(--surface-color);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1.5rem 2rem;
+            transition: var(--transition);
+            z-index: 1001;
+            box-shadow: var(--shadow-lg);
+            overflow-y: auto;
+        }
+
+        .mobile-nav-container.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(2px);
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        /* بخش محصولات تخفیف ویژه */
+        .special-offers-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .special-offers-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(120deg, var(--text-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .special-offers-subtitle {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .offer-card {
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 4rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #3d16da, var(--accent-color));
+        }
+
+        .offer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .offer-content {
+            flex: 1;
+        }
+
+        .course-titles {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .countdown-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .countdown-item:not(:last-child)::after {
+            content: ':';
+            position: absolute;
+            left: -12px;
+            top: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .countdown-value {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: rgba(46, 162, 204, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            border: 2px solid rgba(46, 162, 204, 0.2);
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .price-box {
+            background: var(--card-color);
+            border-radius: var(--border-radius);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            text-align: right;
+        }
+
+        .current-price {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .old-price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: var(--text-secondary);
+            margin-right: 0.5rem;
+        }
+
+        .sales-info {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sales-number {
+            background: var(--card-color);
+            border-radius: 6px;
+            padding: 0.3rem 0.8rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .offer-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-red {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .btn-red:hover {
+            background: #ff5757;
+            transform: translateY(-2px);
+        }
+
+        .btn-blue {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .offer-image {
+            position: relative;
+            width: 45%;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .offer-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .offer-card:hover .offer-image img {
+            transform: scale(1.05);
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--error-color);
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        /* سکشن آمار و موفقیت‌ها */
+        .stats-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .stats-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(46, 162, 204, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+        }
+
+        .stats-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .stats-header .section-title {
+            color: white;
+            background: linear-gradient(120deg, #ffffff, #a5f3fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stats-header .section-description {
+            color: #cbd5e1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(46, 162, 204, 0.1), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .stat-item:hover::before {
+            opacity: 1;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-color: rgba(46, 162, 204, 0.3);
+        }
+
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover .stat-icon {
+            background: rgba(46, 162, 204, 0.2);
+            transform: scale(1.1);
+        }
+
+        .stat-data {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+            color: white;
+        }
+
+        .stat-symbol {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            font-weight: 500;
+        }
+
+        .stats-cta {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stats-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .stats-cta .btn-light {
+            background: white;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stats-cta .btn-light:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ریسپانسیو برای سکشن‌های جدید */
+        @media (max-width: 992px) {
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .why-us-visual {
+                order: -1;
+            }
+            
+            .visual-container {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .why-us-section,
+            .stats-section {
+                padding: 4rem 0;
+            }
+            
+            .why-us-feature {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .stats-cta {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visual-container {
+                height: 300px;
+            }
+            
+            .floating-element {
+                display: none;
+            }
+        }
+        /* بخش محصولات تخفیف ویژه - بهبود ریسپانسیو */
+.special-offers-section {
+    padding: 4rem 0;
+    background-color: var(--bg-color);
+}
+
+.offer-card {
+    background: var(--surface-color);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.offer-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #3d16da, var(--accent-color));
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.offer-content {
+    flex: 1;
+    order: 2;
+}
+
+.course-titles {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.countdown {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    text-align: center;
+    position: relative;
+}
+
+.countdown-item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.countdown-value {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgba(46, 162, 204, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    border: 2px solid rgba(46, 162, 204, 0.2);
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.price-box {
+    background: var(--card-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    text-align: right;
+}
+
+.current-price {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    display: block;
+}
+
+.old-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.sales-info {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sales-number {
+    background: var(--card-color);
+    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.offer-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-red {
+    background: var(--error-color);
+    color: white;
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn-red:hover {
+    background: #ff5757;
+    transform: translateY(-2px);
+}
+
+.btn-blue {
+    background: var(--primary-color);
+    color: white;
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn-blue:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.offer-image {
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    order: 1;
+}
+
+.offer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.05);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--error-color);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+    z-index: 2;
+}
+
+/* تنظیم فواصل سکشن‌ها */
+.hero-section {
+    padding: 6rem 0;
+}
+
+.features-section, 
+.courses-section, 
+.testimonials-section, 
+.why-us-section,
+.special-offers-section {
+    padding: 5rem 0;
+}
+
+.cta-section {
+    padding: 7rem 0;
+}
+
+.stats-section {
+    padding: 6rem 0;
+}
+
+.modern-footer {
+    padding: 4rem 0 0;
+}
+
+/* ریسپانسیو برای سکشن تخفیف ویژه */
+@media (min-width: 768px) {
+    .offer-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem;
+    }
+    
+    .offer-content {
+        order: 1;
+        flex: 1;
+    }
+    
+    .offer-image {
+        order: 2;
+        width: 45%;
+    }
+    
+    .price-box {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .course-titles {
+        font-size: 1.8rem;
+    }
+    
+    .countdown-value {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .countdown-item:not(:last-child)::after {
+        left: -12px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .offer-card {
+        padding: 1.5rem;
+    }
+    
+    .course-titles {
+        font-size: 1.3rem;
+    }
+    
+    .countdown {
+        gap: 0.8rem;
+    }
+    
+    .countdown-value {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .countdown-item:not(:last-child)::after {
+        left: -6px;
+        top: 8px;
+        font-size: 1rem;
+    }
+    
+    .price-box {
+        padding: 1rem;
+    }
+    
+    .current-price {
+        font-size: 1.2rem;
+    }
+    
+    .offer-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-red, .btn-blue {
+        width: 100%;
+    }
+}
+
+/* تنظیم فواصل سکشن‌ها در موبایل */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .features-section, 
+    .courses-section, 
+    .testimonials-section, 
+    .why-us-section,
+    .special-offers-section {
+        padding: 3rem 0;
+    }
+    
+    .cta-section {
+        padding: 5rem 0;
+    }
+    
+    .stats-section {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .features-section, 
+    .courses-section, 
+    .testimonials-section, 
+    .why-us-section,
+    .special-offers-section {
+        padding: 2.5rem 0;
+    }
+    
+    .cta-section {
+        padding: 4rem 0;
+    }
+    
+    .stats-section {
+        padding: 3rem 0;
+    }
+}
+    </style>
+</head>
+
+<body class="light-theme">
+    <!-- هدر بهبود یافته -->
+    <header class="page-header" id="page-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-wrap">
+                <!-- لوگو -->
+                <a href="index-2.html" class="logo" id="main-logo">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <span>کُدینو</span>
+                </a>
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="nav-container">
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item">
+                                <a href="index-2.html" class="nav-link active">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="instructors.html" class="nav-link">مدرسین</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="header-actions">
+                        <!-- جستجو -->
+                        <div class="search-container">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="جستجو...">
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="btn btn-secondary">ورود</a>
+                        <a href="register.html" class="btn btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- منوی موبایل -->
+        <div class="mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="index-2.html" class="mobile-nav-link active">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="courses.html" class="mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="instructors.html" class="mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="about.html" class="mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="mobile-header-actions">
+                <!-- جستجو -->
+                <div class="mobile-search-box">
+                    <input type="text" class="mobile-search-input" placeholder="جستجو...">
+                    <button class="mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="mobile-auth-buttons">
+                    <a href="login.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="btn btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- overlay برای منوی موبایل -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- محتوای صفحه -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i style="color:rgb(19, 83, 245);" class="fas fa-rocket"></i>
+                        <span>پیش به سوی موفقیت</span>
+                    </div>
+
+                    <h1 class="hero-title">آینده خود را با کُدینو بسازید</h1>
+
+                    <p class="hero-description">
+                        سازمان یادگیرنده خود را به سطح بعدی ببرید. با آکادمی کُدینو، مهارت‌های جدید را بیاموزید،
+                        گواهینامه‌های معتبر دریافت کنید و برای آینده‌ای درخشان آماده شوید.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">۵۵۰۰+</span>
+                            <span class="stat-label">دوره آموزشی</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">۴۸۰+</span>
+                            <span class="stat-label">مدرس و موسسه</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">۹۸٪</span>
+                            <span class="stat-label">رضایت کاربران</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-search">
+                        <label for="hero-search" class="sr-only">جستجوی دوره‌ها</label>
+                        <input type="search" id="hero-search" class="hero-search-input" placeholder="چه چیزی را می خواهید یاد بگیرید؟">
+                        <button class="hero-search-btn">
+                            <i class="fas fa-search"></i>
+                            <span>جستجو</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-visual">
+                        <!-- کارت‌های شناور -->
+                        <div>
+
+                        </div>
+                        <div class="floating-card">
+                            <div class="card-icon accents">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">گواهینامه معتبر</div>
+                                <div class="card-text">در هر دوره</div>
+                            </div>
+                        </div>
+
+                        <div class="floating-card">
+                            <div class="card-icon accent">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">فرصت شغلی</div>
+                                <div class="card-text">با مهارت‌های جدید</div>
+                            </div>
+                        </div>
+
+                        <!-- تصویر اصلی -->
+                        <div style="width: 100%; height: 550px;  border-radius: var(--border-radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                            <img src="img/text2.png" alt="" style="width: 98%; height: 550px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش امکانات -->
+    <section class="features-section">
+        <div class="container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">محبوب‌ترین ویژگی ها</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+
+            <div class="features-grid">
+                <!-- ویژگی ۱ -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="feature-title">مهارت‌های ضروری را همین حالا بیاموزید</h3>
+                    <p class="feature-description">
+                        با دوره‌های تخصصی ما، مهارت‌های مورد نیاز بازار کار را
+                        به‌صورت عملی و کاربردی فرا بگیرید.
+                    </p>
+                    <a href="#" class="feature-link">
+                        <span>بیشتر بدانید</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- ویژگی ۲ -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">گواهینامه‌ها و مدارک تحصیلی خود را کسب کنید</h3>
+                    <p class="feature-description">
+                        در پایان هر دوره، گواهینامه معتبر دریافت کنید و رزومه خود را
+                        برای فرصت‌های شغلی بهتر تقویت نمایید.
+                    </p>
+                    <a href="#" class="feature-link">
+                        <span>بیشتر بدانید</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- ویژگی ۳ -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-title">برای شغل بعدی خود در هر جایی آماده شوید</h3>
+                    <p class="feature-description">
+                        با مهارت‌های به‌روز و کاربردی، برای موقعیت‌های شغلی بهتر
+                        در هر کجای دنیا آماده شوید.
+                    </p>
+                    <a href="#" class="feature-link">
+                        <span>بیشتر بدانید</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <!-- ویژگی ۴ -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="feature-title">کارشناسی ارشد در گرایش‌های مختلف</h3>
+                    <p class="feature-description">
+                        دوره‌های تخصصی کارشناسی ارشد در گرایش‌های متنوع برای
+                        ارتقای سطح علمی و حرفه‌ای شما.
+                    </p>
+                    <a href="#" class="feature-link">
+                        <span>بیشتر بدانید</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش چرا آکادمی کُدینو؟ - طراحی جدید -->
+    <section class="why-us-section">
+        <div class="why-us-background">
+            <div class="why-us-pattern"></div>
+        </div>
+
+        <div class="container why-us-container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">چرا آکادمی کُدینو؟</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+
+
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <div class="why-us-features">
+                        <div class="why-us-feature">
+                            <div class="feature-icon-container">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>آموزش‌های پروژه‌محور</h3>
+                                <p>تمام دوره‌های ما بر اساس پروژه‌های واقعی طراحی شده‌اند تا مهارت‌های عملی شما را تقویت کنند و تجربه کاری واقعی به شما بدهند.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-us-feature">
+                            <div class="feature-icon-container">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>پشتیبانی ۲۴ ساعته</h3>
+                                <p>تیم پشتیبانی ما همیشه در دسترس است تا به سوالات شما پاسخ دهد و مشکلاتتان را حل کند. هیچ سوالی بدون پاسخ نمی‌ماند.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-us-feature">
+                            <div class="feature-icon-container">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>مدرسین متخصص و باتجربه</h3>
+                                <p>همه مدرسین ما حداقل ۵ سال سابقه کاری در حوزه تدریس خود دارند و از متخصصان برتر صنعت هستند.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="why-us-visual">
+                    <div class="visual-container">
+                        <div class="main-visual">
+                            <img src="img/Video.png" alt="ویژگی‌های آکادمی کُدینو" class="visual-image">
+                        </div>
+
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fas fa-users"></i>
+                                <span>۱۰۰۰۰+ دانشجو</span>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-star"></i>
+                                <span>امتیاز ۴.۹ از ۵</span>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-trophy"></i>
+                                <span>برنده جایزه کیفیت</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش دوره‌های ویژه -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">محبوب‌ترین دوره‌ها</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+
+            <div class="courses-grid">
+                <!-- دوره ۱ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/02.jpg" alt="توسعه وب با React.js">
+                        <span class="course-badge popular">پرطرفدار</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">برنامه‌نویسی</div>
+                        <h3 class="course-title">توسعه وب با React.js - کامل و پروژه‌محور</h3>
+                        <p class="course-description">
+                            یادگیری React.js از صفر تا صد با انجام ۵ پروژه واقعی. این دوره شامل مفاهیم پیشرفته مانند Hooks، Context API و Redux می‌باشد.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۴ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۲۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">متوسط</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="testimonial-avatar">
+                                <img src="img/me2.png" alt="">
+                            </div>
+                            <span>علی رضایی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">۲۹۰,۰۰۰ تومان</div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۹ (۱۲۴)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- دوره ۲ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/01.jpg" alt="یادگیری ماشین با Python">
+                        <span class="course-badge new">جدید</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">هوش مصنوعی</div>
+                        <h3 class="course-title">یادگیری ماشین با Python و TensorFlow</h3>
+                        <p class="course-description">
+                            دوره جامع یادگیری ماشین با پیاده‌سازی الگوریتم‌های مختلف. شامل پروژه‌های عملی در زمینه بینایی کامپیوتر و پردازش زبان طبیعی.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۳۶ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۵۶ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">پیشرفته</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="testimonial-avatar">
+                                <img src="img/me.png" alt="">
+                            </div>
+                            <span>مریم کریمی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">۴۲۰,۰۰۰ تومان</div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۸ (۹۶)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- دوره ۳ -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/03.jpg" alt="طراحی تجربه کاربری حرفه‌ای">
+                        <span class="course-badge discount">تخفیف ویژه</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">طراحی UI/UX</div>
+                        <h3 class="course-title">طراحی تجربه کاربری حرفه‌ای با Figma</h3>
+                        <p class="course-description">
+                            طراحی رابط کاربری مدرن و تجربه کاربری عالی با ابزار Figma. شامل اصول طراحی، وایرفریمینگ، پروتوتایپ و طراحی سیستم.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <div class="course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۰ ساعت</span>
+                                </div>
+                                <div class="course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۹۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="course-level">مقدماتی</div>
+                        </div>
+                        <div class="course-instructor">
+                            <div class="testimonial-avatar">
+                                <img src="img/me3.jpg" alt="">
+                            </div>
+                            <span>رضا نوروزی</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                ۲۴۵,۰۰۰ تومان
+                                <span class="course-old-price">۳۵۰,۰۰۰</span>
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۷ (۸۷)</span>
+                            </div>
+                        </div>
+                        <button class="btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش محصولات تخفیف ویژه -->
+    <section class="special-offers-section">
+        <div class="container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">پرتخفیف ترین دوره</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-content">
+                    <h3 class="course-titles">دوره پیشرفته زبان انگلیسی آیلتس</h3>
+
+                    <div class="price-box">
+                        <div class="price">
+                            <span class="current-price">۴,۵۰۰,۰۰۰ تومان</span>
+                            <span class="old-price">۶,۳۰۰,۰۰۰</span>
+                        </div>
+                        <div class="sales-info">
+                            <span>میزان فروش :</span>
+                            <span class="sales-number">۱۸</span>
+                        </div>
+                    </div>
+
+                    <div class="offer-buttons">
+                        <a href="#" class="btn btn-red">افزودن به سبد خرید</a>
+                        <a href="#" class="btn btn-blue">معرفی دوره</a>
+                    </div>
+                </div>
+
+                <div class="offer-image">
+                    <div class="discount-badge">۲۹٪</div>
+                    <img src="img/05.png" alt="دوره آموزشی تکنیک خرید">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش نظرات -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="courses-header">
+                <div>
+                    <span class="section-subtitle">دوره‌های منتخب</span>
+                    <h2 class="section-title">محبوب‌ترین نظرات</h2>
+                </div>
+                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- نظر ۱ -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="img/me2.png" alt="سارا محمدی">
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="testimonial-name">سارا محمدی</div>
+                            <div class="testimonial-role">توسعه‌دهنده Front-end</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        دوره React.js واقعاً زندگی من را تغییر داد. بعد از اتمام دوره، در کمتر از یک ماه توانستم در یک شرکت معتبر استخدام شوم. کیفیت آموزش و پشتیبانی بی‌نظیر بود.
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-course">
+                            <div class="course-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>توسعه وب با React.js</span>
+                        </div>
+                        <div class="testimonial-date">۲ ماه پیش</div>
+                    </div>
+                </div>
+
+                <!-- نظر ۲ -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="img/me.png" alt="امیر حسینی">
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="testimonial-name">امیر حسینی</div>
+                            <div class="testimonial-role">متخصص هوش مصنوعی</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        دوره یادگیری ماشین با Python بسیار جامع و کاربردی بود. پروژه‌های عملی این دوره به من کمک کرد تا مفاهیم پیچیده را به راحتی درک کنم و در مصاحبه‌های شغلی موفق شوم.
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-course">
+                            <div class="course-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span>یادگیری ماشین با Python</span>
+                        </div>
+                        <div class="testimonial-date">۳ ماه پیش</div>
+                    </div>
+                </div>
+
+                <!-- نظر ۳ -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="img/me3.jpg" alt="نازنین رضایی">
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="testimonial-name">نازنین رضایی</div>
+                            <div class="testimonial-role">طراح UI/UX</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        به عنوان یک طراح، دوره Figma برای من بسیار ارزشمند بود. مدرس دوره تجربه عملی زیادی داشت و تکنیک‌های پیشرفته‌ای را آموزش داد که مستقیماً در پروژه‌هایم استفاده کردم.
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-course">
+                            <div class="course-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>طراحی UI/UX با Figma</span>
+                        </div>
+                        <div class="testimonial-date">۱ ماه پیش</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index-2.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap footer-logo-icon"></i>
+                        <span>آکادمی کُدینو</span>
+                    </a>
+                    <p class="footer-description">
+                        آکادمی کُدینو یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی،
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index-2.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ejmal.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+        </div>
+
+        <!-- بخش پایین فوتر -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © ۲۰۲۳ آکادمی کُدینو. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">حریم خصوصی</a>
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="sitemap.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // مدیریت اسکرول هدر
+        const header = document.getElementById('page-header');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // مدیریت منوی موبایل
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNavContainer = document.getElementById('mobile-nav-container');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mainLogo = document.getElementById('main-logo');
+
+        function toggleMobileMenu() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNavContainer.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            mainLogo.classList.toggle('hidden');
+            document.body.style.overflow = mobileNavContainer.classList.contains('active') ? 'hidden' : '';
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+        // بستن منوی موبایل در صورت کلیک روی لینک‌ها
+        const navLinks = document.querySelectorAll('.mobile-nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // مدیریت فرم‌های جستجو
+        const searchForms = document.querySelectorAll('.search-box, .hero-search, .mobile-search-box');
+
+        searchForms.forEach(form => {
+            const input = form.querySelector('input[type="text"], input[type="search"]');
+            const button = form.querySelector('button');
+
+            button.addEventListener('click', function () {
+                if (input.value.trim() !== '') {
+                    // در اینجا می‌توانید منطق جستجو را پیاده‌سازی کنید
+                    alert('جستجو برای: ' + input.value);
+                }
+            });
+
+            input.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    if (input.value.trim() !== '') {
+                        // در اینجا می‌توانید منطق جستجو را پیاده‌سازی کنید
+                        alert('جستجو برای: ' + input.value);
+                    }
+                }
+            });
+        });
+
+        // مدیریت دکمه‌های خرید
+        const enrollButtons = document.querySelectorAll('.btn-enroll');
+
+        enrollButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const courseTitle = this.closest('.course-card').querySelector('.course-title').textContent;
+                const coursePrice = this.closest('.course-card').querySelector('.course-price').textContent;
+
+                // نمایش پیام موفقیت
+                this.innerHTML = '<i class="fas fa-check"></i><span>افزوده شد به سبد</span>';
+                this.style.background = 'var(--success-color)';
+
+                // بازگشت به حالت اولیه بعد از 2 ثانیه
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i><span>افزودن به سبد خرید</span>';
+                    this.style.background = 'linear-gradient(135deg, var(--primary-color), var(--accent-color))';
+                }, 2000);
+
+                // در اینجا می‌توانید منطق افزودن به سبد خرید را پیاده‌سازی کنید
+                console.log(`دوره "${courseTitle}" با قیمت ${coursePrice} به سبد خرید افزوده شد.`);
+            });
+        });
+
+        // انیمیشن اسکرول برای عناصر
+        const animateOnScroll = function () {
+            const elements = document.querySelectorAll('.feature-card, .course-card, .why-us-feature');
+
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // تنظیم حالت اولیه برای انیمیشن
+        document.querySelectorAll('.feature-card, .course-card, .why-us-feature').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // مدیریت فرم خبرنامه
+        const newsletterForm = document.querySelector('.newsletter-form');
+
+        newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('.newsletter-input');
+            const button = this.querySelector('.btn-newsletter');
+
+            if (emailInput.value.trim() !== '') {
+                // ذخیره ایمیل در localStorage (شبیه‌سازی)
+                localStorage.setItem('newsletter_email', emailInput.value);
+
+                // نمایش پیام موفقیت
+                button.innerHTML = '<i class="fas fa-check"></i><span>عضویت موفق</span>';
+                button.style.background = 'var(--success-color)';
+
+                // بازگشت به حالت اولیه بعد از 3 ثانیه
+                setTimeout(() => {
+                    button.innerHTML = '<i class="fas fa-paper-plane"></i><span>عضویت در خبرنامه</span>';
+                    button.style.background = 'linear-gradient(135deg, var(--primary-color), var(--accent-color))';
+                    emailInput.value = '';
+                }, 3000);
+
+                // در اینجا می‌توانید درخواست AJAX برای ذخیره ایمیل ارسال کنید
+                console.log(`ایمیل ${emailInput.value} برای خبرنامه ثبت شد.`);
+            }
+        });
+
+        // مدیریت ریسپانسیو در هنگام تغییر اندازه پنجره
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                mobileMenuToggle.classList.remove('active');
+                mobileNavContainer.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                mainLogo.classList.remove('hidden');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // انیمیشن برای سکشن "چرا آکادمی کُدینو؟"
+        function animateWhyUs() {
+            const features = document.querySelectorAll('.why-us-feature');
+
+            features.forEach((feature, index) => {
+                feature.style.opacity = '0';
+                feature.style.transform = 'translateX(50px)';
+                feature.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            feature.style.opacity = '1';
+                            feature.style.transform = 'translateX(0)';
+                        }
+                    });
+                });
+
+                observer.observe(feature);
+            });
+        }
+
+        // فعال‌سازی انیمیشن‌ها هنگام لود صفحه
+        document.addEventListener('DOMContentLoaded', function () {
+            animateWhyUs();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from iliya-r.ir/img-9/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 May 2026 12:06:42 GMT -->
+</html>
