@@ -1,0 +1,704 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('../font/vazir/Vazirmatn%5bwght%5d.woff2') format('woff2 supports variations'),
+    url('../font/vazir/Vazirmatn%5bwght%5d.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Vazirmatn';
+}
+
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+a:hover {
+  color: #1e69e8 !important;
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: 'Vazirmatn';
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Vazirmatn';
+}
+
+.bg-grid {
+  background-image: url(../img/grid.svg);
+}
+
+.bg-pattern {
+  background-image: url(../img/banner-bg-shape.png);
+  background-size: contain;
+}
+
+.fs-9r {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+input {
+  caret-color: #1eb35b;
+}
+
+input::placeholder {
+  font-family: 'Vazirmatn';
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #999 !important;
+}
+
+
+.bg-icon-search {
+  background-color: #e8f7ee;
+  color: #1eb35b;
+}
+
+.bg-icon-search:hover {
+  background-color: #e8f7ee;
+  color: #1eb35b;
+  border: 1px solid #1eb35b;
+}
+
+.my-title {
+  color: #1eb35b;
+  background-color: lab(77.3737% -32.0178 26.391/.1);
+  border: 1px solid #ddd;
+}
+
+.my-arrow {
+  rotate: 45deg;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+.my-special-item {
+  color: #242424;
+  font-size: 0.8rem;
+  font-weight: 450;
+}
+
+h2 {
+  font-family: 'Vazirmatn';
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.text-green {
+  color: #1eb35b;
+}
+
+.my-arrow-link {
+  font-family: 'Vazirmatn';
+  font-size: 0.95rem;
+  font-weight: 450;
+  text-decoration: none;
+  color: #242424;
+}
+
+.my-arrow-link:hover {
+  color: #1eb35b;
+}
+
+.my-bg-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin: 0 2rem;
+}
+
+
+.my-card h3 {
+  font-size: 1.2rem;
+
+}
+
+.my-card p {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.my-card span {
+  font-size: 0.8rem;
+}
+
+.my-card svg {
+  color: #ffbf0a;
+}
+
+.my-card-person-img {
+  width: 36px;
+  height: 36px;
+}
+
+.my-card-line {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin: 10px auto;
+}
+
+
+
+.my-card-price-bg {
+  background-color: #1eb35b;
+  color: #fff;
+  font-weight: 500;
+}
+
+.my-card-price-real {
+  color: #1eb35b;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.bg-gray {
+  background-color: #eeeeee;
+}
+
+.bg-gray svg {
+  color: #575757;
+}
+
+.bg-green {
+  background-color: #1eb35b;
+}
+
+.btn-article-card {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-article-card svg {
+  color: #fff;
+}
+
+.btn-article-card:hover {
+  background-color: #397df2;
+  color: #fff;
+}
+
+.bg-w {
+  background-color: #fff;
+}
+
+/*Article Page*/
+
+.line {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ap-list {
+  background-color: #f7f7f7;
+}
+
+.ap-list a {
+  color: #242424;
+  font-size: 0.9rem;
+}
+
+.ap-icon-social {
+  display: flex;
+  background-color: #bdbdbd;
+  color: #fff;
+  border-radius: 8px;
+  line-height: 2;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ap-icon-social:hover {
+  background: #1e69e8;
+  cursor: pointer;
+}
+
+.h-full {
+  height: 10px;
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+/*Basket*/
+/* نمایش dropdown-menu با هاور */
+#cart-dropdown:hover>.dropdown-menu,
+#cart-dropdown:focus-within>.dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* حالت پیش‌فرض */
+#cart-dropdown>.dropdown-menu {
+  display: none;
+  /* مهم برای کنترل توسط CSS */
+  opacity: 0;
+  transform: translateY(6px) !important;
+  transform: translateX(180px) !important;
+  transition: 140ms ease;
+  width: 260px;
+  /* اندازه دلخواه */
+}
+
+/* چون ما با هاور باز می‌کنیم، باید pointer هم درست باشد */
+#cart-dropdown .dropdown-menu {
+  pointer-events: auto;
+}
+
+/* بهتر شدن استایل آیتم‌ها */
+.cart-item-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.cart-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #f3f3f3;
+  flex: 0 0 auto;
+}
+
+.cart-item-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.cart-item-meta {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* نمایش منو در حالت hover */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* برای اینکه فاصله ناخواسته ایجاد نشود */
+  }
+}
+
+
+
+
+/* SHOW the caret pseudo-element explicitly + then put SVG inside it */
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+
+  /* hard size so it can never disappear */
+  width: 1em;
+  height: 1em;
+
+  /* remove any borders Bootstrap may add */
+  border: 0;
+  margin: 0 0 0 0.35em;
+
+  /* SVG “V” */
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M3.2%206.2%20L7%209.9%20L10.8%206.2'%20fill='none'%20stroke='%23000'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /* just in case */
+  vertical-align: middle;
+}
+
+/* rotate when expanded */
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+
+.btn-login {
+  border: 1px solid #1eb35b;
+  color: #1eb35b;
+  font-size: 0.95rem;
+}
+
+.btn-login:hover {
+  background-color: rgba(30, 179, 91, 0.1);
+  border: 1px solid #1eb35b;
+  color: #1eb35b;
+
+}
+
+.btn-blue {
+  border: 1px solid #1e69e8;
+  color: #1e69e8;
+
+}
+
+.btn-blue-bg {
+  border: 1px solid #1e69e8;
+  color: #fff;
+  background-color: #1e69e8;
+}
+
+.btn-blue-bg:hover {
+  border: 1px solid #1e69e8;
+  color: #fff !important;
+  background-color: #007bff;
+
+}
+
+.btn-gray:hover{
+  color: #fff !important;
+}
+
+.btn-blue:hover {
+  background-color: #1e69e8;
+  border: 1px solid #1e69e8;
+  color: #fff;
+
+}
+
+footer {
+  background-color: #242424;
+  color: #fff;
+}
+
+.fw-400 {
+  font-weight: 300;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fs-9 {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.fc-gray {
+  color: #c7c7c7;
+}
+
+.footer-link {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link-icon {
+  background-color: #1e69e8;
+  display: inline-block;
+  width: 6px;
+  height: 2px;
+}
+
+
+.footer-icon-social {
+  background-color: #575757;
+}
+
+.footer-icon-social:hover {
+  background-color: #1e69e8;
+}
+
+.footer-bg-copy {
+  background-color: #3a3a3a;
+}
+
+
+.extra-layer {
+  top: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: #1e69e8;
+  z-index: -1;
+}
+
+
+
+/*Extra text*/
+.collapsible-text .collapsed-content {
+  /* استایل‌های مربوط به محتوای قابل نمایش */
+  margin-bottom: 10px;
+}
+
+.collapsible-text .expanded-content {
+  /* استایل‌های مربوط به محتوای مخفی */
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.collapsible-text .toggle-button {
+  background-color: #1e69e8;
+  color: #fff;
+}
+
+
+.icon-sells-num {
+  color: #575757 !important;
+  font-size: 0.9rem !important;
+}
+
+/*Page Index_02*/
+
+.bg-blue {
+  background-color: #1e69e8;
+}
+
+.text-blue {
+  color: #1e69e8;
+}
+
+.header-icon-social {
+  background-color: #575757;
+}
+
+.header-icon-social:hover {
+  background-color: #1e69e8;
+}
+
+.header-social-link {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn-login-blue {
+  border: 1px solid #1e69e8;
+  color: #1e69e8;
+  font-size: 0.95rem;
+}
+
+.btn-login-blue:hover {
+  background-color: rgba(30, 77, 179, 0.1);
+  border: 1px solid #1e69e8;
+  color: #1e69e8;
+}
+
+.bg-icon-search-blue {
+  background-color: #e8eaf7;
+  color: #1e69e8;
+}
+
+.bg-icon-search-blue:hover {
+  background-color: #e8eaf7;
+  color: #1e69e8;
+  border: 1px solid #1e69e8;
+}
+
+.my-arrow-link-blue {
+  font-family: 'Vazirmatn';
+  font-size: 0.95rem;
+  font-weight: 450;
+  text-decoration: none;
+  color: #242424;
+}
+
+.my-arrow-link-blue:hover {
+  color: #1e69e8;
+}
+
+
+.btn-tab {
+  color: #1e69e8;
+  font-weight: 500;
+}
+
+.btn-tab:hover {
+  color: #575757;
+}
+
+.btn-tab.active {
+  background-color: #1e69e8;
+  color: #fff;
+}
+
+.my-title-blue {
+  color: #1e69e8;
+  background-color: lab(61.97% 12.65 -31.83 / 0.1);
+  border: 1px solid #ddd;
+}
+
+.my-card-price-bg-blue {
+  background-color: #1e69e8;
+  color: #fff;
+  font-weight: 500;
+}
+
+.my-card-price-real-blue {
+  color: #1e69e8;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/*Swiper*/
+.swiper {
+  width: 100%;
+  height: 200px;
+  /* ارتفاع اسلایدر را تنظیم کنید */
+  overflow: hidden;
+  /* برای اینکه کامنت‌های خارج از دید پنهان شوند */
+}
+
+.swiper-slide {
+  text-align: center;
+  /* پس‌زمینه اسلایدها */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 92%;
+  /* عرض کارت کامنت */
+  margin: 0 !important;
+
+  /* برای وسط چین شدن */
+}
+
+.comment-text {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.customer-name {
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* استایل دکمه‌های پیمایش */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+  /* رنگ دکمه‌ها */
+}
+
+/* استایل صفحه بندی (اختیاری) */
+.swiper-pagination-bullet-active {
+  background: #007bff;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: end;
+  /* مرکز چین */
+  align-items: center;
+  gap: 10px;
+  /* فاصله بین دکمه‌ها */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+  /* بسیار مهم: Swiper موقعیت را برمی‌دارد */
+  width: 20px;
+  height: 20px;
+  color: #575757;
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #1e69e8;
+}
+
+
+.cat-card:hover {
+  transition: 0.3s;
+  background-color: #1e69e8;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lh-2 {
+  line-height: 2;
+}
+
+
+/*Page Index01*/
+.my-special-item-p01 {
+  color: #52565c;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.my-special-item-icon {
+  color: #1e69e8;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.dropdown-item {
+  font-weight: 400;
+}
+
+.content-course h2 {
+  padding: 0.8rem 1rem 0 1rem;
+}
+
+.content-course p {
+  padding: 0.2rem 1rem 0 1rem;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.img-wrapper:hover img {
+  transform: scale(1.2);
+}
+
+.text-gray{
+  color: #6C757D;
+}
+
+.bg-comment{
+  background-color: #f1f5f9;
+}
